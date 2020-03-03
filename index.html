@@ -19,10 +19,6 @@
           s.parentNode.insertBefore(rs,s);
         })();
 
-
-setTimeout(() => {
-    
-}, 5000);
         var head = document.getElementsByTagName('HEAD')[0];  
   
         // Create new link Element 
@@ -37,6 +33,13 @@ setTimeout(() => {
   
         // Append link element to HTML head 
         head.appendChild(link); 
+        fetch('http://example.com/movies.json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
     //   </script>
 </body>
 </html>

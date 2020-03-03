@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resources_calendar_widget" class="styled">
+        <div class="loader">Loading...</div>
+      </div>
+      <script type="text/javascript">
+        (function(){
+          var rs = document.createElement("script");
+          rs.type = "text/javascript";
+          rs.async = true;
+          rs.src = "//calendar.planningcenteronline.com/widgets/eJxj4ajmsGLLz2Sa4WzFlVqcX1AC4pd4KnEaWRgbslmxuYZYsRV7KvEn5uTEp5al5pUUs1lzAMVKM5kPdrJYcRckFiXmFlczAACxmBP298e83529eb85e8cc443f81fc7a2494375d9d9adb.js";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(rs,s);
+        })();
+
+
+setTimeout(() => {
+    
+}, 5000);
+        var head = document.getElementsByTagName('HEAD')[0];  
+  
+        // Create new link Element 
+        var link = document.createElement('link'); 
+  
+        // set the attributes for link element  
+        link.rel = 'stylesheet';  
+      
+        link.type = 'text/css'; 
+      
+        link.href = './css/main.css';  
+  
+        // Append link element to HTML head 
+        head.appendChild(link); 
+    //   </script>
+</body>
+</html>

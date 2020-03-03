@@ -1,0 +1,21 @@
+@import url('https://rsms.me/inter/inter.css');
+
+*{
+    border: none;
+    font-family: 'inter';
+}
+.rc-navi{
+    display: none;
+}
+.rc-footer{
+    display: none;
+}
+.rc-table_sleeve{
+    input{
+        display: none;
+    }
+}
+
+.rc-resources_grid .rc-table_striped tbody tr:nth-child(2n+1) .rc-primary_col{
+    background-color: #1aa2dc;
+}

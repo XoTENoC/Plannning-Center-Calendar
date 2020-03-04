@@ -10,36 +10,20 @@
         <div class="loader">Loading...</div>
       </div>
       <script type="text/javascript">
-        (function(){
-          var rs = document.createElement("script");
-          rs.type = "text/javascript";
-          rs.async = true;
-          rs.src = "//calendar.planningcenteronline.com/widgets/eJxj4ajmsGLLz2Sa4WzFlVqcX1AC4pd4KnEaWRgbslmxuYZYsRV7KvEn5uTEp5al5pUUs1lzAMVKM5kPdrJYcRckFiXmFlczAACxmBP298e83529eb85e8cc443f81fc7a2494375d9d9adb.js";
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(rs,s);
-        })();
-
-        var head = document.getElementsByTagName('HEAD')[0];  
-  
-        // Create new link Element 
-        var link = document.createElement('link'); 
-  
-        // set the attributes for link element  
-        link.rel = 'stylesheet';  
-      
-        link.type = 'text/css'; 
-      
-        link.href = './css/main.css';  
-  
-        // Append link element to HTML head 
-        head.appendChild(link); 
-        fetch('http://example.com/movies.json')
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
+        const url = "https://api.planningcenteronline.com/resources/v2/events";
+fetch(url, {
+  method: "GET",
+  headers: {
+    "secret": "5870081b5d9ebd621abd49bda4757fc8585415e7ae6ccb4de5b40c1d9ef11c33",
+  }
+})
+  .then(resp => resp.json())
+  .then(function(data) {
     console.log(data);
+  })
+  .catch(function(error) {
+    console.log(error);
   });
-    //   </script>
+</script>
 </body>
 </html>

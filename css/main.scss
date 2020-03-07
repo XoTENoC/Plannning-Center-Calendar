@@ -1,8 +1,61 @@
-@import url('https://rsms.me/inter/inter.css');
+@import 'fonts.scss';
+
+$surface: #3C3C46;
+$table-bg: #4E4E58;
+$on-surface: #ffffff;
+$on-top: #AEADB2;
 
 *{
     border: none;
     font-family: 'inter';
+    body{
+        background-color: $surface;
+        .rc-content{
+            #global_header{
+                h2{
+                    color: #ffffff;
+                    font-family: 'Roboto Condensed';
+                    font-size: 60px;
+                    font-weight: lighter;
+                }
+            }
+            .rc-resources_grid{
+                table{
+                    background-color: $table-bg;
+                    width: 99%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    thead{
+                        text-align: left;
+                        font-family: 'Roboto Condensed', sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: $on-top;
+                        tr{
+                            th{
+                                padding: 16px;
+                            }
+                        }
+                    }
+                    tbody{
+                        font-family: 'Roboto Condensed', sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: $on-surface;
+                        tr{
+                            border-bottom: 1px solid #000;
+                            td{
+                                padding: 16px;
+                            }
+                        }
+                        tr:last-child{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .rc-navi{
     display: none;
@@ -17,5 +70,4 @@
 }
 
 .rc-resources_grid .rc-table_striped tbody tr:nth-child(2n+1) .rc-primary_col{
-    background-color: #1aa2dc;
 }

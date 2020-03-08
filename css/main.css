@@ -22,6 +22,8 @@
   width: 99%;
   margin-left: auto;
   margin-right: auto;
+  border: 0px;
+  border-spacing: 0;
 }
 
 * body .rc-content .rc-resources_grid table thead {
@@ -34,6 +36,12 @@
 
 * body .rc-content .rc-resources_grid table thead tr th {
   padding: 16px;
+  border-bottom: 1px solid #9c9c9c;
+  border-right: 1px solid #9c9c9c;
+}
+
+* body .rc-content .rc-resources_grid table thead tr th:last-child {
+  border-right: none;
 }
 
 * body .rc-content .rc-resources_grid table tbody {
@@ -43,12 +51,19 @@
   color: #ffffff;
 }
 
-* body .rc-content .rc-resources_grid table tbody tr {
-  border-bottom: 1px solid #000;
-}
-
 * body .rc-content .rc-resources_grid table tbody tr td {
   padding: 16px;
+  margin: 0px;
+  border-bottom: 1px solid #9c9c9c;
+  border-right: 1px solid #9c9c9c;
+}
+
+* body .rc-content .rc-resources_grid table tbody tr td:last-child {
+  border-right: none;
+}
+
+* body .rc-content .rc-resources_grid table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .rc-navi {
@@ -60,6 +75,10 @@
 }
 
 .rc-table_sleeve input {
+  display: none;
+}
+
+.rc-event_time_name {
   display: none;
 }
 /*# sourceMappingURL=main.css.map */

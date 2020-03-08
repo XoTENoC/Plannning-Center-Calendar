@@ -1,5 +1,5 @@
 (function (namespace) {
-    var selected_date = '2020-03-07';
+    var selected_date = new Date();
   
     var checkForjQuery = function() {
       return window.jQuery && jQuery.fn && /^1\.[3-9]/.test(jQuery.fn.jquery);
@@ -8,7 +8,7 @@
     var loadWidget = function() {
     //   loadCSS();
       loadCSS2();
-      loadDataForDate('2020-03-07');
+      loadDataForDate(selected_date);
       loadKalendae();
     };
   
